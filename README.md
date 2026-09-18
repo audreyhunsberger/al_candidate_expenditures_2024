@@ -4,6 +4,8 @@ This was a project I made back in 2024 when I learned a little HTML/CSS for fun.
 
 It allows the user to easily browse through 2024 campaign expenditures for Alabama politicians. Pretty simple, but fun to expand my technical knowledge!
 
+PS: You'll notice that everything says "Audrey Bayne." That's my maiden name, not an imposter!
+
 ## How to Use
 
 The home page has a dropdown to select a candidate.
