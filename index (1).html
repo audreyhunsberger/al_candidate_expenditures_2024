@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Select a Candidate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>WHERE IS MY<br>MONEY GOING?</h1>
+    <h2>2024 Alabama Candidate Expenditure Filings Through June 21, 2024</h2>
+    <form action="/expenditures" method="get">
+      <div class="form-group">
+        <label for="candidate">Choose a candidate:</label>
+        <select name="candidate" id="candidate">
+          {% for candidate in candidates %}
+            <option value="{{ candidate }}">{{ candidate }}</option>
+          {% endfor %}
+        </select>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <footer>
+      <p>Created by Audrey Bayne</p>
+      <p>All data obtained from the Alabama Secretary of State website.</p>
+    </footer>
+  </body>
+</html>

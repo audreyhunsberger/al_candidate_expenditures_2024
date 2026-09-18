@@ -1,0 +1,152 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+    background-color: white;
+    margin: 20px;
+    padding-top: 20px; 
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    font-size: 85pt;
+    line-height: 1; 
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+.small-playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    font-size: 48pt;
+}
+
+form {
+    margin: 10px 0; 
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: 300; 
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* Use light font for the footer */
+    color: black;
+}
+
+
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+}

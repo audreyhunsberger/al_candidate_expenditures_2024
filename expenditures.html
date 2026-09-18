@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Expenditures for {{ candidate }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 class="small-playfair">Expenditures for {{ candidate }}</h1>
+    <table>
+      <tr>
+        <th>Expenditure Amount</th>
+        <th>Expenditure Date</th>
+        <th>Paid To (Last Name or Company Name)</th>
+        <th>Paid To (First Name)</th>
+        <th>Explanation</th>
+        <th>Purpose</th>
+      </tr>
+      {% for expenditure in expenditures %}
+      <tr>
+        <td>${{ "{:,.2f}".format(expenditure['ExpenditureAmount']) }}</td>
+        <td>{{ expenditure['ExpenditureDate'] }}</td>
+        <td>{{ expenditure['LastName'] }}</td>
+        <td>{{ expenditure['FirstName'] }}</td>
+        <td>{{ expenditure['Explanation'] }}</td>
+        <td>{{ expenditure['Purpose'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>Total Expenditure: ${{ "{:,.2f}".format(total_expenditure) }}</p>
+    <a href="/">Back to candidate selection</a>
+  </body>
+</html>
+
